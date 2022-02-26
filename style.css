@@ -1,7 +1,18 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Work Sans', sans-serif;
+}
+.fixed-width{
+    width: 1260px;
+    margin: 0 auto;
+}
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+.text-center{
+    text-align: center;
 }
 .text-left{
     text-align: left;
@@ -9,65 +20,268 @@
 .text-right{
     text-align: right;
 }
-.text-center{
-    text-align: center;
-}
-.clearfix::after{
-    content: '';
-    clear: both;
-    display: block;
-}
-.left{
-    float: left;
-}
-.right{
-    float: right;
-}
-img {
+img{
     max-width: 100%;
-}
-a{
-    text-decoration: none;
-}
-.fixed-width{
-    max-width: 1300px;
-    margin: 0 auto;
 }
 
 
 
 /**** Header Section ****/
+.header{
+    background-color: #22C3A3;
+    position: sticky;
+    top: 0;
+    
+}
+.header-logo{
+    float: left;
+    width: 30%;
+    padding: 15px 0;
+}
+.header-menu{
+    float: right;
+    width: 70%;
+}
+
+.header-logo h1{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.header-menu ul{
+    list-style: none;
+    text-align: right;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: -4px;
+}
+.header-menu ul li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 15px;
+    padding: 0 15px;
+    text-decoration: none;
+    line-height: 64px;
+}
+.header-menu ul li a:hover{}
+
 
 
 
 /**** Banner Section ****/
+.banner{
+    background: url(./image/header-bg01.jpg) no-repeat bottom center;
+    background-size: cover;
+    text-align: center;
+    padding: 200px 0;
+}
+.banner h1{
+    font-size: 55px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.banner p{
+    font-size: 19px;
+    color: rgb(241, 237, 237);
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.banner-button{
+    display: inline-block;
+    padding: 10px 25px;
+    border: 2px solid rgb(241, 237, 237);
+    color: rgb(241, 237, 237);
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
 
 
 
-/**** Pricing Table Section ****/
+
+/* Service Section */
+.service{
+    padding: 100px 0;
+    border-bottom: 2px solid #22C3A3;
+}
+.service-top{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.service-top h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.service-top p{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(117, 110, 110);;
+    font-weight: 400;
+}
+
+
+.service-bottom{}
+.service-item{
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+    width: 23%;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 1%;
+}
+.service-item span{
+    font-size: 40px;
+    color: #22C3A3;
+}
+.service-item h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.service-item p{
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(117, 110, 110);
+}
 
 
 
-/**** Team Section  ****/
+.service-box{
+    padding: 10px;
+}
 
 
 
-/**** Newsletter Section ****/
+/* About Section */
+.about{
+    padding: 70px 0;
+}
+
+.about-top{
+    text-align: center;
+}
+.about-top h1{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.about-top p{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(117, 110, 110);
+    font-weight: 400;
+}
+.about-bottom{
+    margin-top: 50px;
+}
+.about-image{
+    float: left;
+    width: 45%;
+}
+.about-content{
+    float: right;
+    width: 50%;
+}
+.about-content-inner{
+    color: rgb(117, 110, 110);
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 15px;
+}
+.about-content-inner h2{
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+.about-content-inner p{
+    font-size: 15px;
+}
 
 
 
-/**** About Section ****/
+
+/* Contact Section */
+.contact{
+    background-color: #F6F6F6;
+    padding: 70px 0;
+}
+.contact-top{}
+.contact-top h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.contact-top p{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(117, 110, 110);
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.contact-bottom{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.contact-content{
+    float: left;
+    width: 33.3%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.contact-content-inner{
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+}
+.contact-content-inner span{
+    color: #22C3A3;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.contact-content-inner p{
+    color: rgb(117, 110, 110);
+    font-size: 15px;
+}
 
 
 
-/**** Testimonial Section ****/
+
+/* Footer Section */
+.footer{}
+.footer-top{
+    background-color: #22C3A3;
+}
+.footer-bottom{
+    background-color: #222222;
+    color: #fff;
+    padding: 15px 0;
+}
+.footer-bottom p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: rgb(117, 110, 110)
+}
+
+.footer-menu{
+    text-decoration: none;
+}
+.footer-menu li{
+    display: inline-block;
+}
+.footer-menu li a{
+    display: inline-block;
+    color: #fff;
+    padding: 15px 15px;
+}
 
 
 
-/**** Contact Section ****/
-
-
-
-/**** Footer Section ****/
 
 
